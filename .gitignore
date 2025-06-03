@@ -1,0 +1,52 @@
+# ===== Java / Spring Boot =====
+*.class
+*.jar
+*.war
+*.iml
+*.log
+*.db
+
+# Gradle
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Android (if using Android app)
+*.apk
+*.ap_
+*.dex
+*.class
+*.log
+*.idea/
+.gradle/
+captures/
+build/
+local.properties
+.cxx/
+.externalNativeBuild/
+
+# ===== Database Files =====
+db/*.sql~          # 임시 백업파일 무시
+*.sqlite
+*.db
+
+# Logs
+logs/
+*.log
+
+# Misc
+.env
+*.swp
+*~
+
+# ===== GCP 관련 =====
+credentials.json
+service-account.json
