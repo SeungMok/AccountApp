@@ -11,13 +11,13 @@ import java.util.List;
 public class UserController {
     private final UserRepository userRepository;
 
-    public UserController(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public UserController(UserRepository _userRepository) {
+        this.userRepository = _userRepository;
     }
 
     @PostMapping
-    public User createUser(@RequestBody User user) {
-        return userRepository.save(user);
+    public User createUser(@RequestBody User _user) {
+        return userRepository.save(_user);
     }
 
     @GetMapping
