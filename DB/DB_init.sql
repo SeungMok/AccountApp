@@ -1,12 +1,13 @@
 CREATE TABLE `users` (
-  `id` integer PRIMARY KEY,
-  `password` varchar(255),
+  `id` integer PRIMARY KEY AUTO_INCREMENT,
+  `email` varchar(255) UNIQUE NOT NULL,
+  `password` varchar(255) NOT NULL,
   `name` varchar(255),
   `created_at` timestamp
 );
 
 CREATE TABLE `receipts` (
-  `id` integer PRIMARY KEY,
+  `id` integer PRIMARY KEY AUTO_INCREMENT,
   `store_name` varchar(255),
   `payment_method` varchar(255),
   `total_price` integer,
@@ -16,7 +17,7 @@ CREATE TABLE `receipts` (
 );
 
 CREATE TABLE `receipt_item` (
-  `id` integer PRIMARY KEY,
+  `id` integer PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(255),
   `price` datetime,
   `quantity` int,
@@ -25,7 +26,7 @@ CREATE TABLE `receipt_item` (
 );
 
 CREATE TABLE `category` (
-  `id` integer PRIMARY KEY,
+  `id` integer PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(255)
 );
 
