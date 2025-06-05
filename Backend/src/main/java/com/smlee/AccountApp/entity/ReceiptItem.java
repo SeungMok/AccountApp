@@ -9,7 +9,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Receipt_item {
+public class ReceiptItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
