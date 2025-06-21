@@ -33,6 +33,19 @@ local.properties
 .cxx/
 .externalNativeBuild/
 
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/captures
+.externalNativeBuild
+
 # ===== Database Files =====
 db/*.sql~          # 임시 백업파일 무시
 *.sqlite
